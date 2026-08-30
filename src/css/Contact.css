@@ -1,0 +1,107 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* --- my details on the left --- */
+.info-row {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.info-label {
+  color: var(--text-light);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.info-row a:hover {
+  color: var(--accent);
+}
+
+.contact-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+.contact-socials a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* --- the form on the right --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+}
+
+.contact-form label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 16px;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 1px solid var(--accent);
+  border-color: var(--accent);
+}
+
+/* the red text under an input when something is wrong */
+.error-note {
+  margin: -10px 0 14px;
+  color: #ef4444;
+  font-size: 13px;
+}
+
+/* the green box that shows up after the form is sent */
+.success-note {
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #22c55e;
+  border-radius: 6px;
+  color: #22c55e;
+  font-size: 14px;
+}
+
+.form-btn {
+  margin-top: 6px;
+}
+
+@media (max-width: 880px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

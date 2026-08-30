@@ -1,0 +1,169 @@
+/* ==========================================================
+   Global styles.
+   This file has the colours, the fonts, and a few classes
+   that I use in more than one section.
+   ========================================================== */
+
+/* --- The colours of the site.
+   Every other file uses these names, so if you change a colour here
+   it changes everywhere. --- */
+body {
+  --bg: #0f172a;          /* page background */
+  --card: #1e293b;        /* boxes and cards */
+  --border: #334155;      /* lines around the cards */
+  --text: #f1f5f9;        /* normal text */
+  --text-light: #94a3b8;  /* smaller, less important text */
+  --accent: #6366f1;      /* the one colour I use everywhere */
+  --accent-dark: #4f46e5; /* same colour but darker, for hover */
+}
+
+/* --- Basic reset --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background-color: var(--bg);
+  /* tells the browser this is a dark page, so the scrollbar and the
+     text cursor in the form inputs are dark too */
+  color-scheme: dark;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Sora', Arial, sans-serif;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* --- Classes I reuse in several sections ------------------ */
+
+/* keeps the content in the middle of the screen */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* the space above and below every section */
+.section {
+  padding: 90px 0;
+}
+
+/* The navbar sticks to the top of the screen, so when a menu link
+   jumps to a section I leave 70px of room for it. Without this the
+   navbar would cover the section title. */
+section {
+  scroll-margin-top: 70px;
+}
+
+/* the title area at the top of each section */
+.section-head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 5px 14px;
+  border-radius: 4px;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  max-width: 560px;
+  margin: 0 auto;
+  color: var(--text-light);
+}
+
+/* the word I want to show in the accent colour */
+.accent-text {
+  color: var(--accent);
+}
+
+/* --- Buttons --------------------------------------------- */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-dark);
+}
+
+.btn-outline {
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* --- The card look I use for most boxes ------------------ */
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* --- Phones ----------------------------------------------- */
+@media (max-width: 700px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}

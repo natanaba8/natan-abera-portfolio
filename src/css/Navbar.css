@@ -1,0 +1,102 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+/* --- the logo on the left --- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Sora', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.logo-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* --- the links in the middle --- */
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* --- the menu button on the right --- */
+/* it is hidden on big screens, the media query below shows it */
+.menu-btn {
+  display: none;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--text-light);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.menu-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* --- phones and small tablets --- */
+@media (max-width: 800px) {
+  .menu-btn {
+    display: block;
+  }
+
+  /* the menu is hidden until the Menu button is clicked */
+  .nav-links {
+    display: none;
+  }
+
+  /* when Navbar.jsx adds the "open" class the menu drops down */
+  .nav-links.open {
+    display: block;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    padding: 12px 24px;
+    background-color: var(--card);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.open li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.open li:last-child {
+    border-bottom: none;
+  }
+}

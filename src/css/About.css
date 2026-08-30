@@ -1,0 +1,54 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-text p {
+  color: var(--text-light);
+}
+
+/* --- the quick facts card --- */
+.about-card {
+  padding: 26px;
+}
+
+.about-card h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.about-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.about-card li:last-child {
+  border-bottom: none;
+}
+
+.fact-label {
+  color: var(--text-light);
+}
+
+.fact-value {
+  font-weight: 600;
+  text-align: right;
+}
+
+.about-btn {
+  display: block;
+  margin-top: 22px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

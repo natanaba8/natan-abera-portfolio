@@ -1,0 +1,142 @@
+.hero {
+  padding: 80px 0;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* --- left side --- */
+.hero-hello {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero-name {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero-role {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.hero-tagline {
+  max-width: 480px;
+  color: var(--text-light);
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+.hero-socials a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* --- right side: the profile card --- */
+.hero-card {
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.hero-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-family: 'Sora', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.hero-card h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.hero-card-role {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.hero-card-place {
+  color: var(--text-light);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* the three numbers at the bottom of the card */
+.hero-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.hero-stats li {
+  flex: 1;
+}
+
+.hero-stats strong {
+  display: block;
+  font-family: 'Sora', Arial, sans-serif;
+  font-size: 24px;
+  color: var(--accent);
+}
+
+.hero-stats span {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+/* --- phones and small tablets --- */
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-name {
+    font-size: 38px;
+  }
+
+  .hero-role {
+    font-size: 22px;
+  }
+}
