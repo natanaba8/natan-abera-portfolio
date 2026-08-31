@@ -7,7 +7,8 @@ function Hero() {
   return (
     <section id="home" className="hero">
       <div className="container hero-inner">
-        {/* ---------- left side: the text ---------- */}
+        
+        {/* left side the text */}
         <div className="hero-text">
           <p className="hero-hello">Hello, my name is</p>
 
@@ -36,7 +37,7 @@ function Hero() {
           </ul>
         </div>
 
-        {/* ---------- right side: a simple profile card ---------- */}
+        {/* right side a simple profile card */}
         <div className="hero-card card">
           <div className="hero-avatar">{personalInfo.initials}</div>
           <h3>{personalInfo.name}</h3>

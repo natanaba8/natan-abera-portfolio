@@ -2,9 +2,8 @@ import { useState } from 'react'
 import { navLinks, personalInfo } from '../data'
 import '../css/Navbar.css'
 
-// The bar at the top of the page.
+
 function Navbar() {
-  // true when the menu is open on a phone, false when it is closed
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
@@ -13,6 +12,7 @@ function Navbar() {
         <a href="#home" className="logo">
           <span className="logo-badge">{personalInfo.initials}</span>
           <span className="logo-text">{personalInfo.name}</span>
+          <span>{personalInfo.catagory}</span>
         </a>
 
         {/* On a phone this list is hidden until menuOpen is true */}

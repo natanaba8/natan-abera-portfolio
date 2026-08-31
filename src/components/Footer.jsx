@@ -3,7 +3,6 @@ import SocialIcon from './Icons'
 import '../css/Footer.css'
 
 function Footer() {
-  // I read the year from the computer so I never have to change it by hand
   const year = new Date().getFullYear()
 
   return (

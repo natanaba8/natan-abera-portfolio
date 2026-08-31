@@ -1,25 +1,19 @@
-/* ==========================================================
-   Global styles.
-   This file has the colours, the fonts, and a few classes
-   that I use in more than one section.
-   ========================================================== */
 
-/* --- The colours of the site.
-   Every other file uses these names, so if you change a colour here
-   it changes everywhere. --- */
-body {
-  --bg: #0f172a;          /* page background */
-  --card: #1e293b;        /* boxes and cards */
-  --border: #334155;      /* lines around the cards */
-  --text: #f1f5f9;        /* normal text */
-  --text-light: #94a3b8;  /* smaller, less important text */
-  --accent: #6366f1;      /* the one colour I use everywhere */
-  --accent-dark: #4f46e5; /* same colour but darker, for hover */
-}
 
-/* --- Basic reset --- */
+
+/* Basic reset */
 * {
   box-sizing: border-box;
+}
+
+body {
+  --bg: #0f172a;          
+  --card: #1e293b;        
+  --border: #334155;      
+  --text: #f1f5f9;        
+  --text-light: #94a3b8;  
+  --accent: #6366f1;      
+  --accent-dark: #4f46e5; 
 }
 
 body {
@@ -29,8 +23,6 @@ body {
   line-height: 1.7;
   color: var(--text);
   background-color: var(--bg);
-  /* tells the browser this is a dark page, so the scrollbar and the
-     text cursor in the form inputs are dark too */
   color-scheme: dark;
 }
 
@@ -66,7 +58,7 @@ button {
   cursor: pointer;
 }
 
-/* --- Classes I reuse in several sections ------------------ */
+/* Classes I reuse in several sections */
 
 /* keeps the content in the middle of the screen */
 .container {
@@ -75,19 +67,16 @@ button {
   padding: 0 24px;
 }
 
-/* the space above and below every section */
+
 .section {
   padding: 90px 0;
 }
 
-/* The navbar sticks to the top of the screen, so when a menu link
-   jumps to a section I leave 70px of room for it. Without this the
-   navbar would cover the section title. */
 section {
   scroll-margin-top: 70px;
 }
 
-/* the title area at the top of each section */
+
 .section-head {
   text-align: center;
   margin-bottom: 50px;
@@ -122,7 +111,7 @@ section {
   color: var(--accent);
 }
 
-/* --- Buttons --------------------------------------------- */
+/*  Buttons  */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -150,14 +139,14 @@ section {
   color: var(--accent);
 }
 
-/* --- The card look I use for most boxes ------------------ */
+
 .card {
   background-color: var(--card);
   border: 1px solid var(--border);
   border-radius: 8px;
 }
 
-/* --- Phones ----------------------------------------------- */
+/* Phones */
 @media (max-width: 700px) {
   .section {
     padding: 60px 0;

@@ -4,24 +4,17 @@ import SocialIcon from './Icons'
 import '../css/Contact.css'
 
 function Contact() {
-  // what the visitor has typed into the three inputs
   const [form, setForm] = useState({ name: '', email: '', message: '' })
-  // one error message for each input that is wrong
   const [errors, setErrors] = useState({})
-  // true after a message is sent, so I can show a thank you note
   const [sent, setSent] = useState(false)
 
-  // This runs every time the visitor types something.
-  // event.target.name is the name I gave the input below ("name",
-  // "email" or "message"), so one function works for all three.
+  
   function handleChange(event) {
     setForm({ ...form, [event.target.name]: event.target.value })
   }
 
   function handleSubmit(event) {
-    event.preventDefault() // stops the page from reloading
-
-    // check the inputs and collect the problems in one object
+    event.preventDefault() 
     const newErrors = {}
 
     if (form.name === '') {
@@ -40,12 +33,8 @@ function Contact() {
 
     setErrors(newErrors)
 
-    // Object.keys gives me a list of the errors I found.
-    // If that list is empty then nothing was wrong.
     if (Object.keys(newErrors).length === 0) {
-      // NOTE: this does not really send an email yet. To make it work,
-      // sign up for a free service like Formspree or EmailJS and send
-      // the form to them here.
+      
       console.log('Message from the contact form:', form)
 
       setSent(true)
@@ -67,7 +56,7 @@ function Contact() {
         </div>
 
         <div className="contact-grid">
-          {/* ---- my details on the left ---- */}
+          {/*my details on the left*/}
           <div className="contact-info">
             <div className="info-row card">
               <span className="info-label">Email</span>
@@ -95,9 +84,9 @@ function Contact() {
             </ul>
           </div>
 
-          {/* ---- the form on the right ---- */}
+          {/* form the right */}
           <form className="contact-form card" onSubmit={handleSubmit}>
-            {/* this note only shows up after the form is sent */}
+            { /* this note only shows up after the form is sent */}
             {sent && <p className="success-note">Thanks! I will reply as soon as I can.</p>}
 
             <label htmlFor="name">Your name</label>

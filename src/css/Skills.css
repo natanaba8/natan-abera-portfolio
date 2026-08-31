@@ -14,7 +14,6 @@
 
 .skill-card h3 {
   font-size: 19px;
-  /* a short line under the title, in the accent colour */
   padding-bottom: 12px;
   border-bottom: 2px solid var(--accent);
 }
@@ -25,7 +24,6 @@
   margin-bottom: 18px;
 }
 
-/* the little grey boxes with the tool names */
 .skill-tags {
   display: flex;
   flex-wrap: wrap;

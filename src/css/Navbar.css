@@ -13,7 +13,7 @@
   height: 68px;
 }
 
-/* --- the logo on the left --- */
+/* the logo on the left */
 .logo {
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
   font-size: 15px;
 }
 
-/* --- the links in the middle --- */
+/* the links in the middle */
 .nav-links {
   display: flex;
   gap: 28px;
@@ -50,8 +50,6 @@
   color: var(--accent);
 }
 
-/* --- the menu button on the right --- */
-/* it is hidden on big screens, the media query below shows it */
 .menu-btn {
   display: none;
   height: 38px;
@@ -68,18 +66,16 @@
   color: var(--accent);
 }
 
-/* --- phones and small tablets --- */
 @media (max-width: 800px) {
   .menu-btn {
     display: block;
   }
 
-  /* the menu is hidden until the Menu button is clicked */
   .nav-links {
     display: none;
   }
 
-  /* when Navbar.jsx adds the "open" class the menu drops down */
+  
   .nav-links.open {
     display: block;
     position: absolute;

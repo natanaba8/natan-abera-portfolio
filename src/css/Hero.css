@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-/* --- left side --- */
+/* left side */
 .hero-hello {
   margin-bottom: 8px;
   color: var(--accent);
@@ -63,7 +63,7 @@
   color: var(--accent);
 }
 
-/* --- right side: the profile card --- */
+/* right side the profile card */
 .hero-card {
   padding: 32px 24px;
   text-align: center;
@@ -126,7 +126,7 @@
   color: var(--text-light);
 }
 
-/* --- phones and small tablets --- */
+/* phones and small tablets */
 @media (max-width: 900px) {
   .hero-inner {
     grid-template-columns: 1fr;

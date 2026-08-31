@@ -47,7 +47,7 @@
   color: var(--accent);
 }
 
-/* --- the form on the right --- */
+/* the form on the right */
 .contact-form {
   display: flex;
   flex-direction: column;

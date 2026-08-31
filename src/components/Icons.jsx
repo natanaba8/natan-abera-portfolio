@@ -40,8 +40,7 @@ function MailIcon() {
   )
 }
 
-// I only export this one. I give it a name like "github" and it
-// gives me back the right icon, so the other files stay short.
+
 function SocialIcon({ name }) {
   if (name === 'github') 
     return <GithubIcon />

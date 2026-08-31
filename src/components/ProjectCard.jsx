@@ -1,10 +1,8 @@
-// One card in the projects grid.
-// Projects.jsx passes one project down to it.
+
 function ProjectCard({ project }) {
   return (
     <div className="project-card card">
-      {/* The coloured box at the top with the project name in it.
-          Swap this for an <img> tag when you have real screenshots. */}
+      {/* this for an <img> tag when you have real screenshots. */}
       <div className="project-top">
         <h3>{project.title}</h3>
       </div>

@@ -1,4 +1,4 @@
-/* --- the filter buttons --- */
+/* the filter buttons */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +28,6 @@
   color: #ffffff;
 }
 
-/* --- the grid of project cards --- */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -45,7 +44,6 @@
   border-color: var(--accent);
 }
 
-/* the coloured box at the top of the card, with the project name in it */
 .project-top {
   display: flex;
   align-items: center;
@@ -78,8 +76,6 @@
 
 .project-desc {
   margin-top: 8px;
-  /* flex: 1 pushes the links to the bottom, so all the cards
-     line up nicely even when the text is a different length */
   flex: 1;
   color: var(--text-light);
   font-size: 14px;
